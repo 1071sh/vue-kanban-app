@@ -33,6 +33,24 @@ module.exports = {
     "no-extra-semi": "error",
     "no-unexpected-multiline": "error",
     "no-unreachable": "error",
-    "space-before-function-paren": 0
+    "space-before-function-paren": 0,
+    "vue/html-self-closing": [
+      "error",
+      {
+        html: {
+          void: "always"
+        }
+      }
+    ],
+    "vue/max-attributes-per-line": [
+      2,
+      {
+        singleline: 20,
+        multiline: {
+          max: 1,
+          allowFirstLine: false
+        }
+      }
+    ]
   }
 };
